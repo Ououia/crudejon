@@ -1,0 +1,57 @@
+<form
+  #formValue="ngForm"
+  [formGroup]="editForm"
+  (ngSubmit)="editEmployee(formValue.value)"
+>
+  <mat-form-field appearance="fill">
+    <label class="mb-3 fw-bold" for="first-name">First name</label>
+    <input
+      matInput
+      type="text"
+      formControlName="name"
+      id="name"
+      name="name"
+      value="{{ this.data.employee.name }}"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <label class="mb-3 fw-bold" for="last-name">Last name</label>
+    <input
+      matInput
+      type="text"
+      formControlName="last_name"
+      id="last_name"
+      name="last_name"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <label class="mb-3 fw-bold" for="job_title">Job</label>
+    <input
+      matInput
+      type="text"
+      formControlName="job_title"
+      id="job_title"
+      name="job_title"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <label class="mb-3 fw-bold" for="email">Email</label>
+    <input
+      matInput
+      type="email"
+      formControlName="email"
+      id="email"
+      name="email"
+    />
+  </mat-form-field>
+  <p>Complete the form to enable button.</p>
+  <button
+    class="mb-2"
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="!editForm.valid"
+  >
+    <mat-icon>send</mat-icon>
+  </button>
+</form>

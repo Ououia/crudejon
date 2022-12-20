@@ -1,0 +1,41 @@
+<button class="m-4" mat-raised-button color="basic" (click)="openDialog()">
+  <mat-icon>person_add</mat-icon>
+</button>
+
+<button class="m-4" mat-raised-button color="basic" (click)="ngOnInit()">
+  <mat-icon>refresh</mat-icon>
+</button>
+<h1 class="m-4">List of Employees</h1>
+<table class="table-borderless m-4">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 14em">name</th>
+      <th scope="col" style="width: 14em">Last name</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="%" *ngFor="let items of service.employees">
+      <td>{{ items.name }}</td>
+      <td>{{ items.last_name }}</td>
+      <td class="d-flex gap-2">
+        <button
+          mat-raised-button
+          color="warn"
+          type="button"
+          (click)="confirmSuppresion(items.id)"
+        >
+          <mat-icon>person_remove</mat-icon>
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          type="button"
+          (click)="editEmployee(items)"
+        >
+          <mat-icon>info</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
