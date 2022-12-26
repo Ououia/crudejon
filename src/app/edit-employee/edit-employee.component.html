@@ -1,10 +1,13 @@
+<div class="mb-4 fs-6 fw-light text-decoration-underline">
+  Informations sur L'employé selectionné :
+</div>
 <form
   #formValue="ngForm"
   [formGroup]="editForm"
   (ngSubmit)="editEmployee(formValue.value)"
 >
   <mat-form-field appearance="fill">
-    <label class="mb-3 fw-bold" for="first-name">First name</label>
+    <label class="mb-3 fw-bold" for="first-name">Prénom</label>
     <input
       matInput
       type="text"
@@ -15,7 +18,7 @@
     />
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <label class="mb-3 fw-bold" for="last-name">Last name</label>
+    <label class="mb-3 fw-bold" for="last-name">Nom de Famille</label>
     <input
       matInput
       type="text"
@@ -25,7 +28,7 @@
     />
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <label class="mb-3 fw-bold" for="job_title">Job</label>
+    <label class="mb-3 fw-bold" for="job_title">Emploi</label>
     <input
       matInput
       type="text"
@@ -35,7 +38,7 @@
     />
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <label class="mb-3 fw-bold" for="email">Email</label>
+    <label class="mb-3 fw-bold" for="email">E-mail</label>
     <input
       matInput
       type="email"
@@ -44,7 +47,10 @@
       name="email"
     />
   </mat-form-field>
-  <p>Complete the form to enable button.</p>
+  <p class="text-info">
+    Vous pouvez modifier les informations et appuyer sur le bouttons pour
+    valider les changements
+  </p>
   <button
     class="mb-2"
     mat-raised-button

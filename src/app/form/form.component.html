@@ -1,14 +1,17 @@
+<div class="mb-4 fs-6 fw-light text-decoration-underline">
+  Ajouter un Employés :
+</div>
 <form
   #formValue="ngForm"
   [formGroup]="myForm"
   (ngSubmit)="createEmployee(formValue.value)"
 >
   <mat-form-field appearance="fill">
-    <label for="first-name">First name</label>
+    <label for="first-name">Prénom*</label>
     <input matInput type="text" formControlName="name" id="name" name="name" />
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <label for="last-name">Last name</label>
+    <label for="last-name">Nom de Famille*</label>
     <input
       matInput
       type="text"
@@ -18,7 +21,7 @@
     />
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <label for="job_title">Job</label>
+    <label for="job_title">Emploi*</label>
     <input
       matInput
       type="text"
@@ -28,7 +31,7 @@
     />
   </mat-form-field>
   <mat-form-field appearance="fill">
-    <label for="email">Email</label>
+    <label for="email">E-mail*</label>
     <input
       matInput
       type="email"
@@ -37,7 +40,10 @@
       name="email"
     />
   </mat-form-field>
-  <p>Complete the form to enable button.</p>
+  <p>
+    Remplir le formulaire correctement <br />
+    pour activer le boutton d'envoi.
+  </p>
   <span class="text-info">{{ this.success }}</span>
   <div class="d-flex gap-3">
     <button

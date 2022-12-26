@@ -1,23 +1,26 @@
 <button class="m-4" mat-raised-button color="basic" (click)="openDialog()">
-  <mat-icon>person_add</mat-icon>
+  <mat-icon>person_add</mat-icon> Employés
 </button>
 
 <button class="m-4" mat-raised-button color="basic" (click)="ngOnInit()">
   <mat-icon>refresh</mat-icon>
 </button>
-<h1 class="m-4">List of Employees</h1>
+<br />
+<h1 class="badge text-bg-primary m-4">Liste Des Employés</h1>
 <table class="table-borderless m-4">
   <thead>
     <tr>
-      <th scope="col" style="width: 14em">name</th>
-      <th scope="col" style="width: 14em">Last name</th>
+      <th scope="col" class="fs-6 fw-bold mb-5" style="width: 14em">Prénom</th>
+      <th scope="col" class="fs-6 fw-bold mb-5" style="width: 14em">
+        Nom De Famille
+      </th>
       <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
-    <tr class="%" *ngFor="let items of service.employees">
-      <td>{{ items.name }}</td>
-      <td>{{ items.last_name }}</td>
+    <tr class="" *ngFor="let items of service.employees">
+      <td class="text-capitalize">{{ items.name }}</td>
+      <td class="text-uppercase">{{ items.last_name }}</td>
       <td class="d-flex gap-2">
         <button
           mat-raised-button
