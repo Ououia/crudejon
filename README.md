@@ -1,27 +1,24 @@
-# EcfJon
+# Pour installer Angular CLI, utilisez la commande suivante dans votre terminal :
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+<code> npm install -g @angular/cli </code>
 
-## Development server
+- Cela permettra d'installer Angular CLI de manière globale sur votre ordinateur, ce qui vous permettra de l'utiliser dans n'importe quel projet.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Pour installer les packages nécessaires au fonctionnement de votre projet, utilisez la commande suivante dans le répertoire de votre projet :
 
-## Code scaffolding
+<code> npm install</code>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+- Cela installera tous les packages déclarés comme dépendances dans votre fichier package.json.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+# Pour lancer votre projet, utilisez la commande suivante dans le répertoire de votre projet :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<code> ng serve --open</code>
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Cela démarrera un serveur de développement et ouvrira votre projet dans votre navigateur par défaut.
 
-## Further help
+<hr>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+PS :<em> Pour utiliser les commandes ci-dessus, vous devez avoir installé npm (gestionnaire de paquets pour Node.js) sur votre ordinateur</em>
