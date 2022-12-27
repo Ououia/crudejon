@@ -1,4 +1,4 @@
-<div class="mb-4 fs-6 fw-light text-decoration-underline">
+<div class="mb-4 fs-5 fw-light text-decoration-underline">
   Informations sur L'employé selectionné :
 </div>
 <form
@@ -47,10 +47,12 @@
       name="email"
     />
   </mat-form-field>
-  <p class="text-info">
+
+  <p class="text-info fs-6 fw-light">
     Vous pouvez modifier les informations et appuyer sur le bouttons pour
     valider les changements
   </p>
+
   <button
     class="mb-2"
     mat-raised-button
@@ -58,6 +60,6 @@
     type="submit"
     [disabled]="!editForm.valid"
   >
-    <mat-icon>send</mat-icon>
+    <mat-icon>check</mat-icon>
   </button>
 </form>

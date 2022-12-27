@@ -48,7 +48,8 @@ export class FormComponent implements OnInit {
         this.service.loadData();
         console.log(res);
         this.myForm.reset();
-        this.success = 'Success! Repeat to add more employees';
+        this.success =
+          "Un nouvel employé a été ajouté à la liste. Si vous souhaitez en ajouter d'autres, veuillez effectuer de nouveau l'opération.";
         console.log(this.success);
       });
   }
