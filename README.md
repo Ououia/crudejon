@@ -1,4 +1,4 @@
-#Cloner le repo crudejon
+# Cloner le repo crudejon
 
 
 # Pour installer Angular CLI, utilisez la commande suivante dans votre terminal :
