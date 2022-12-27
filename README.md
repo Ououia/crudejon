@@ -19,6 +19,10 @@
 
 - Cela démarrera un serveur de développement et ouvrira votre projet dans votre navigateur par défaut.
 
+<em>note : il est possible que vous rencontrer l'erreur : "Impossible de charger le fichier C:\Users\[USERNAME]\AppData\Roaming\npm\ng.ps1, car l’exécution de scripts est désactivée sur ce système." Si c'est le cas ouvrer PowerShell en Admin et lancer la commande : </em>
+
+<code> Set-ExecutionPolicy RemoteSigned </code>
+
 <hr>
 
 PS :<em> Pour utiliser les commandes ci-dessus, vous devez avoir installé npm (gestionnaire de paquets pour Node.js) sur votre ordinateur</em>
